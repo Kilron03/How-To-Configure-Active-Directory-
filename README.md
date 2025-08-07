@@ -1,10 +1,10 @@
 #How to Configure Active Directory on an AWS Virtual Machine
 
-> 🔐 This guide walks you through setting up Active Directory (AD) on a Windows Server EC2 instance in AWS
+🔐 This guide walks you through setting up Active Directory (AD) on a Windows Server EC2 instance in AWS
 
 ---
 
-## ✅ Step 1: Launch a Windows Server EC2 Instance
+ ✅ Step 1: Launch a Windows Server EC2 Instance
 
 1. Sign in to [AWS Management Console](https://aws.amazon.com/console/).
 2. Go to **EC2 → Launch Instance**.
@@ -24,7 +24,7 @@
 
 ---
 
-## ✅ Step 2: Connect to the Instance via RDP
+✅ Step 2: Connect to the Instance via RDP
 
 1. Select the instance → **Connect → RDP Clien
 2. Download the `.rdp` file and decrypt the Windows password using your `.pem` key
@@ -32,7 +32,7 @@
 
 ---
 
-## ✅ Step 3: Rename the Computer
+ ✅ Step 3: Rename the Computer
 
 1. Open Server Manager
 2. Click on Local Server → Computer Name
@@ -40,7 +40,7 @@
 
 ---
 
-## ✅ Step 4: Install Active Directory Domain Services (AD DS)
+✅ Step 4: Install Active Directory Domain Services (AD DS)
 
 1. Server Manager → **Add roles and features**
 2. Role-based installation → select your server
@@ -49,7 +49,7 @@
 
 ---
 
-## ✅ Step 5: Promote Server to a Domain Controller
+✅ Step 5: Promote Server to a Domain Controller
 
 1. After install → click Promote this server to a domain controller
 2. Choose **Add a new forest** → name it (e.g., `corp.local`)
@@ -60,7 +60,7 @@
 
 ---
 
-## ✅ Step 6: Verify AD Setup
+✅ Step 6: Verify AD Setup
 
 1. Log back into the instance
 2. Go to **Server Manager → Tools → Active Directory Users and Computers
